@@ -1,0 +1,220 @@
+/* style sheet */
+body {
+  margin: auto;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #f8ad9d;
+}
+
+header {
+  background-color: white;
+  margin-bottom: 45px;
+}
+
+header h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 72px;
+  color: #f8ad9d;
+  text-align: left;
+  margin: 0;
+  padding: 30px;
+}
+
+
+/* navigation */
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: blue;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav ul li a:hover {
+  color: #f8ad9d;
+}
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav {
+    margin-top: 14px;
+  }
+}
+
+/* typography */
+
+h2 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+p {
+ font-family: Arial, Helvetica, sans-serif;
+ line-height: 1.5em;
+ margin-bottom: 0;
+}
+
+/* links */
+
+
+main  a:link { color: blue; }
+main  a:visited { color: blue; }
+main  a:hover { color: white; }
+a:active { color: white; }
+
+/* image */
+
+img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+/* group and items */
+
+.group {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+
+
+/* ---  (Desktop) Groups & Items --- */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}
+
+  .item {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .item-double {
+    flex: 2;
+  }
+
+/* contact form design */
+
+form input,
+form textarea {
+  width: 90%;
+}
+
+form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: blue;
+  font-family: arial;
+}
+
+form textarea {
+  height: 4.75rem;
+  width: 90%;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+form button {
+  border-radius: 10px;
+  border: 0;
+  font-family: arial;
+  font-size: 16px;
+  background: white;
+  color: #f8ad9d;
+  margin: auto;
+}
+
+form input[type="dropdowns"] + label {
+
+  display: inline;
+  color: #000;
+  font-size: 16px;
+  font-family: arial;
+  text-align: center;
+}
+
+#home, #about, #portfolio, #contact {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+#portfolio {
+  background-color: #f8ad9d;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: 25px;
+}
+
+#contact {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  margin: auto;
+  justify-content: center;
+}
+
+footer {
+  background-color: #f8ad9d;
+  margin-top: 40px;
+  margin-bottom: 0;
+  text-align: center;
+}
